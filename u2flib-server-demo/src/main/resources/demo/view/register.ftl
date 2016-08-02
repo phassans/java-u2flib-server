@@ -6,6 +6,7 @@
 
 <script>
 var request = ${data};
+alert(JSON.stringify(request));
 setTimeout(function() {
     u2f.register(request.registerRequests, request.authenticateRequests,
     function(data) {
